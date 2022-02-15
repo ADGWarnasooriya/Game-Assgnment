@@ -10,4 +10,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+}
+
+.name {
+    font-size: 30px;
+    align-self: flex-start;
+    position: absolute;
 }

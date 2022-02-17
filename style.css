@@ -65,6 +65,10 @@ body {
     margin-left: -50px;
 }
 
+.sound-off:hover {
+    cursor: pointer;
+}
+
 .logo {
     width: 150px;
     height: 150px;

@@ -60,3 +60,11 @@ body {
     margin-top: 150px;
     margin-left: -50px;
 }
+
+.logo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: -170px;
+}

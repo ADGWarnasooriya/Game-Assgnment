@@ -39,3 +39,8 @@ function trollIdleAnimation() {
 
     troll.style.backgroundPositionX = trollIdle + "px";
 }
+
+function keypress(event) {
+    var key = event.which;
+    // alert(key);
+}

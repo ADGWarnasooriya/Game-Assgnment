@@ -9,4 +9,6 @@ function play() {
     var name = document.getElementById("name");
     options.remove();
     name.remove();
+
+    viking.className = "viking";
 }

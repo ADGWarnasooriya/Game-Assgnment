@@ -47,6 +47,10 @@ function keypress(event) {
         vikingWalkAnimation();
         setInterval(vikingWalkMarginLeft, 150)
     }
+    if (key == 37) {
+        trollWalkAnimation();
+        setInterval(trollWalkMarginLeft, 150)
+    }
 }
 
 var vikingPositionY = 0;
@@ -63,10 +67,15 @@ function vikingWalkMarginLeft() {
 }
 
 var trollPositionY = 0;
-var trollMarginLeft = 0;
+var trollMarginLeft = 1000;
 
 function trollWalkAnimation() {
     trollPositionY = -262.8;
     troll.style.backgroundPositionY = trollPositionY + "px";
 
+}
+
+function trollWalkMarginLeft() {
+    trollMarginLeft = trollMarginLeft - 3;
+    troll.style.marginLeft = trollWalkMarginLeft + "px";
 }

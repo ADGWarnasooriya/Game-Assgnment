@@ -13,4 +13,6 @@ function play() {
 
     viking.className = "viking";
     document.body.appendChild(viking);
+
+    setInterval();
 }

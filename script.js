@@ -47,3 +47,8 @@ function keypress(event) {
 
 var vikingPositionY = 0;
 var vikingMarginLeft = 0;
+
+function vikingWalkAnimation() {
+    vikingPositionY = -512;
+    viking.style.backgroundPositionY = vikingPositionY + "px";
+}

@@ -11,4 +11,5 @@ function play() {
     name.remove();
 
     viking.className = "viking";
+    document.body.appendChild("viking");
 }

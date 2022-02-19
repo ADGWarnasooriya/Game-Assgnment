@@ -19,6 +19,7 @@ function play() {
     document.body.appendChild(troll);
 
     vikingIdleId = setInterval(vikingIdleAnimation, 150);
+    trollIdleId = setInterval(trollIdleAnimation, 150);
 }
 
 var vikingIdle = 0;

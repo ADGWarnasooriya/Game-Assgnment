@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    background-image: url(./New/Background1.gif);
+    background-size: 100vw 100vh;
+    background-repeat: repeat-x;
 }
 
 .menu {
@@ -92,5 +95,5 @@ body {
     background-image: url(./viking.png);
     position: absolute;
     transform: scale(0.75);
-    margin-top: 340px;
+    margin-top: 320px;
 }

@@ -46,3 +46,4 @@ function keypress(event) {
 }
 
 var vikingPositionY = 0;
+var vikingMarginLeft = 0;

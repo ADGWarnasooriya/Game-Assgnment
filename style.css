@@ -103,7 +103,7 @@ body {
     height: 262.8px;
     background-image: url(./troll.png);
     position: absolute;
-    transform: scaleX(-2) scaleY(2);
-    margin-top: 260px;
-    margin-left: 260px;
+    transform: scaleX(-1.6) scaleY(1.6);
+    margin-top: 415px;
+    margin-left: 1000px;
 }

@@ -3,6 +3,7 @@ function credits() {
 }
 
 var viking = document.createElement("div");
+var menu = document.getElementById("menu");
 
 function play() {
     var options = document.getElementById("options");
@@ -11,5 +12,5 @@ function play() {
     name.remove();
 
     viking.className = "viking";
-    document.body.appendChild("viking");
+    document.body.appendChild(viking);
 }

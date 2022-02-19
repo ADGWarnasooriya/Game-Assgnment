@@ -15,6 +15,9 @@ function play() {
     viking.className = "viking";
     document.body.appendChild(viking);
 
+    troll.className = "troll";
+    document.body.appendChild(troll);
+
     vikingIdleId = setInterval(vikingIdleAnimation, 150);
 }
 

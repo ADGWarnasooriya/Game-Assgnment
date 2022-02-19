@@ -61,3 +61,12 @@ function vikingWalkMarginLeft() {
     vikingMarginLeft = vikingMarginLeft + 3;
     viking.style.marginLeft = vikingWalkMarginLeft + "px";
 }
+
+var trollPositionY = 0;
+var trollMarginLeft = 0;
+
+function trollWalkAnimation() {
+    trollPositionY = -262.8;
+    troll.style.backgroundPositionY = trollPositionY + "px";
+
+}

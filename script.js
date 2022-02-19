@@ -56,3 +56,8 @@ function vikingWalkAnimation() {
     vikingPositionY = -512;
     viking.style.backgroundPositionY = vikingPositionY + "px";
 }
+
+function vikingWalkMarginLeft() {
+    vikingMarginLeft = vikingMarginLeft + 3;
+    viking.style.marginLeft = vikingWalkMarginLeft + "px";
+}

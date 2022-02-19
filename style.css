@@ -97,3 +97,13 @@ body {
     transform: scale(0.75);
     margin-top: 320px;
 }
+
+.troll {
+    width: 420px;
+    height: 262.8px;
+    background-image: url(./troll.png);
+    position: absolute;
+    transform: scaleX(-2) scaleY(2);
+    margin-top: 260px;
+    margin-left: 260px;
+}

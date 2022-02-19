@@ -3,7 +3,7 @@ function credits() {
 }
 
 var viking = document.createElement("div");
-var menu = document.getElementById("menu");
+
 
 function play() {
     var options = document.getElementById("options");

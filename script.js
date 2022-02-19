@@ -43,6 +43,10 @@ function trollIdleAnimation() {
 function keypress(event) {
     var key = event.which;
     // alert(key);
+    if (key == 68) {
+        vikingWalkAnimation();
+        setInterval(vikingWalkMarginLeft, 150)
+    }
 }
 
 var vikingPositionY = 0;

@@ -44,3 +44,5 @@ function keypress(event) {
     var key = event.which;
     // alert(key);
 }
+
+var vikingPositionY = 0;

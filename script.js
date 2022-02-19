@@ -18,6 +18,7 @@ function play() {
 }
 
 var vikingIdle = 0;
+var vikingIdleId = 0;
 
 function vikingIdleAnimation() {
     vikingIdle = vikingIdle - 512.1;

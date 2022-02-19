@@ -16,3 +16,11 @@ function play() {
 
     setInterval();
 }
+
+var vikingIdle = 0;
+
+function vikingIdleAnimation() {
+    vikingIdle = vikingIdle - 512.1;
+
+    viking.style.backgroundPositionX = vikingIdle + "px";
+}

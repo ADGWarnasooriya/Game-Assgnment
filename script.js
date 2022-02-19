@@ -29,3 +29,12 @@ function vikingIdleAnimation() {
 
     viking.style.backgroundPositionX = vikingIdle + "px";
 }
+
+var trollIdle = 0;
+var trollIdleId = 0;
+
+function trollIdleAnimation() {
+    trollIdle = trollIdle - 512.1;
+
+    troll.style.backgroundPositionX = trollIdle + "px";
+}

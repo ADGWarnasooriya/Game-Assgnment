@@ -83,7 +83,7 @@ function vikingWalkMarginLeft() {
         clearInterval(vikingWalkId);
         vikingPositionY = 0;
         viking.style.backgroundPositionY = vikingPositionY + "px";
-        setInterval(vikingIdleAnimation, 150);
+
         vikingWalkStatus = false;
     }
 }
@@ -108,7 +108,7 @@ function trollWalkMarginLeft() {
         clearInterval(trollWalkId);
         trollPositionY = 0;
         troll.style.backgroundPositionY = trollPositionY + "px";
-        setInterval(trollIdleAnimation, 150);
+
         trollWalkStatus = false;
     }
 }

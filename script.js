@@ -24,8 +24,10 @@ function play() {
 
 var vikingIdle = 0;
 var vikingIdleId = 0;
+var vikingIdleStatus = false;
 
 function vikingIdleAnimation() {
+    vikingIdleStatus = true;
     vikingIdle = vikingIdle - 512.1;
 
     viking.style.backgroundPositionX = vikingIdle + "px";

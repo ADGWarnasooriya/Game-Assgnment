@@ -84,7 +84,7 @@ function vikingWalkMarginLeft() {
         clearInterval(vikingWalkId);
         vikingPositionY = 0;
         viking.style.backgroundPositionY = vikingPositionY + "px";
-        trollStopStatus = true;
+        vikingStopStatus = false
 
     }
 }

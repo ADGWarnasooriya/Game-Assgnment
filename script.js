@@ -68,6 +68,7 @@ var vikingPositionY = 0;
 var vikingMarginLeft = 0;
 var vikingWalkId;
 var vikingWalkStatus = false;
+var vikingAttackStatus = false;
 
 function vikingWalkAnimation() {
     vikingPositionY = -512;

@@ -105,7 +105,7 @@ function trollWalkMarginLeft() {
     }
 }
 
-function vikingAttackAnimation() {
+function vikingAttack() {
     vikingPositionY = -1024;
     viking.style.backgroundPositionY = vikingPositionY + "px";
 }

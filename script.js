@@ -68,6 +68,10 @@ function keypress(event) {
     if (key == 87) {
         vikingWalkAnimationStop();
     }
+
+    if (key == 38) {
+        trollWalkAnimationStop();
+    }
 }
 
 var vikingPositionY = 0;

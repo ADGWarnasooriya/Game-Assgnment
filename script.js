@@ -76,6 +76,8 @@ function keypress(event) {
     if (key == 65) {
         vikingBackAnimation();
     }
+
+
 }
 
 var vikingPositionY = 0;
@@ -141,4 +143,22 @@ function trollWalkAnimationStop() {
     trollPositionY = 0;
     troll.style.backgroundPositionY = trollPositionY + "px";
     trollWalkStatus = false;
+}
+
+function vikingBackAnimation() {
+    clearInterval(vikingWalkId);
+    vikingPositionY = 0;
+    viking.style.backgroundPositionY = vikingPositionY + "px";
+    vikingWalkStatus = false;
+    vikingPositionY = -512;
+    viking.style.backgroundPositionY = vikingPositionY + "px";
+
+    setTimeout(function() {
+        vikingMarginLeft = vikingMarginLeft - 10;
+        viking.style.marginLeft = vikingMarginLeft + "px";
+        clearInterval(vikingWalkId);
+        vikingPositionY = 0;
+        viking.style.backgroundPositionY = vikingPositionY + "px";
+        vikingStopStatus = false;
+    }, 500);
 }

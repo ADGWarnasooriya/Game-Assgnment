@@ -48,11 +48,12 @@ function keypress(event) {
     var key = event.which;
     // alert(key);
     if (key == 68) {
-        if (vikingWalkStatus == false) {
-            vikingWalkAnimation();
-            vikingWalkId = setInterval(vikingWalkMarginLeft, 150);
-            vikingWalkStatus = true;
-        }
+        if (vikingWalkStatus == false)
+            if (vikingStopStatus == false) {
+                vikingWalkAnimation();
+                vikingWalkId = setInterval(vikingWalkMarginLeft, 150);
+                vikingWalkStatus = true;
+            }
     }
     if (key == 37) {
         if (trollWalkStatus == false)

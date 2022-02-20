@@ -64,6 +64,10 @@ function keypress(event) {
             }
 
     }
+
+    if (key == 87) {
+        vikingWalkAnimationStop();
+    }
 }
 
 var vikingPositionY = 0;
@@ -115,4 +119,11 @@ function trollWalkMarginLeft() {
         trollStopStatus = true;
 
     }
+}
+
+function vikingWalkAnimationStop() {
+    clearInterval(vikingWalkId);
+    vikingPositionY = 0;
+    viking.style.backgroundPositionY = vikingPositionY + "px";
+    vikingWalkStatus = false;
 }

@@ -77,6 +77,11 @@ function keypress(event) {
         vikingBackAnimation();
     }
 
+    if (key == 39) {
+        trollBackAnimation();
+    }
+
+
 
 }
 
@@ -160,5 +165,23 @@ function vikingBackAnimation() {
         vikingPositionY = 0;
         viking.style.backgroundPositionY = vikingPositionY + "px";
         vikingStopStatus = false;
+    }, 500);
+}
+
+function trollBackAnimation() {
+    clearInterval(trollWalkId);
+    trollPositionY = 0;
+    troll.style.backgroundPositionY = trollPositionY + "px";
+    trollWalkStatus = false;
+    trollPositionY = -262.8;
+    troll.style.backgroundPositionY = trollPositionY + "px";
+
+    setTimeout(function() {
+        trollMarginLeft = trollMarginLeft + 10;
+        troll.style.marginLeft = trollMarginLeft + "px";
+        clearInterval(trollWalkId);
+        trollPositionY = 0;
+        troll.style.backgroundPositionY = trollPositionY + "px";
+        trollStopStatus = false;
     }, 500);
 }

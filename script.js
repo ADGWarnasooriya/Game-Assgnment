@@ -108,6 +108,7 @@ function trollWalkMarginLeft() {
         trollPositionY = 0;
         troll.style.backgroundPositionY = trollPositionY + "px";
         setInterval(trollIdleAnimation, 150);
+        trollWalkStatus = false;
     }
 }
 

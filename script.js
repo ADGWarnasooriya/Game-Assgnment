@@ -111,7 +111,7 @@ function vikingWalkMarginLeft() {
 }
 
 var trollPositionY = 0;
-var trollMarginLeft = 1000;
+var trollMarginLeft = 950;
 var trollWalkId;
 var trollWalkStatus = false;
 var trollAttackStatus = false;

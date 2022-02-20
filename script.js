@@ -49,7 +49,7 @@ function keypress(event) {
     }
     if (key == 37) {
         trollWalkAnimation();
-        setInterval(trollWalkMarginLeft, 150)
+        trollWalkId = setInterval(trollWalkMarginLeft, 150)
     }
 }
 
@@ -69,6 +69,7 @@ function vikingWalkMarginLeft() {
 
 var trollPositionY = 0;
 var trollMarginLeft = 1000;
+var trollWalkId;
 
 function trollWalkAnimation() {
     trollPositionY = -262.8;

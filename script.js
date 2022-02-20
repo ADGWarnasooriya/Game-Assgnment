@@ -110,7 +110,7 @@ function trollWalkMarginLeft() {
         clearInterval(trollWalkId);
         trollPositionY = 0;
         troll.style.backgroundPositionY = trollPositionY + "px";
-
+        trollStopStatus = true;
 
     }
 }

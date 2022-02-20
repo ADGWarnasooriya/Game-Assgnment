@@ -131,3 +131,10 @@ function vikingWalkAnimationStop() {
     viking.style.backgroundPositionY = vikingPositionY + "px";
     vikingWalkStatus = false;
 }
+
+function trollWalkAnimationStop() {
+    clearInterval(trollWalkId);
+    trollPositionY = 0;
+    troll.style.backgroundPositionY = trollPositionY + "px";
+    trollWalkStatus = false;
+}

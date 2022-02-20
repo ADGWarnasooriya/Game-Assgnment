@@ -56,6 +56,7 @@ function keypress(event) {
 var vikingPositionY = 0;
 var vikingMarginLeft = 0;
 var vikingWalkId;
+var vikingWalkStatus = false;
 
 function vikingWalkAnimation() {
     vikingPositionY = -512;

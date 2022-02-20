@@ -35,8 +35,10 @@ function vikingIdleAnimation() {
 
 var trollIdle = 0;
 var trollIdleId = 0;
+var trollIdleStatus = false;
 
 function trollIdleAnimation() {
+    trollIdleStatus = true;
     trollIdle = trollIdle + 420;
 
     troll.style.backgroundPositionX = trollIdle + "px";

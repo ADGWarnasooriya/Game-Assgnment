@@ -95,7 +95,8 @@ function trollWalkAnimation() {
 
 function trollWalkMarginLeft() {
     trollMarginLeft = trollMarginLeft - 3;
-    troll.style.marginLeft = trollWalkMarginLeft + "px";
+    troll.style.marginLeft = trollMarginLeft + "px";
+    // alert(trollMarginLeft - vikingMarginLeft);
     if (trollMarginLeft - vikingMarginLeft < 270) {
         clearInterval(trollWalkId);
         trollPositionY = 0;

@@ -71,7 +71,7 @@ function vikingWalkAnimation() {
 }
 
 function vikingWalkMarginLeft() {
-    vikingMarginLeft = vikingMarginLeft + 10;
+    vikingMarginLeft = vikingMarginLeft + 3;
     viking.style.marginLeft = vikingMarginLeft + "px";
     // alert(trollMarginLeft - vikingMarginLeft);
     if (trollMarginLeft - vikingMarginLeft < 270) {

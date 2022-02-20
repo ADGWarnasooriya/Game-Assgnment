@@ -83,6 +83,7 @@ function vikingWalkMarginLeft() {
         vikingPositionY = 0;
         viking.style.backgroundPositionY = vikingPositionY + "px";
         setInterval(vikingIdleAnimation, 150);
+        vikingWalkStatus = false;
     }
 }
 

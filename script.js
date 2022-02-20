@@ -55,11 +55,12 @@ function keypress(event) {
         }
     }
     if (key == 37) {
-        if (trollWalkStatus == false) {
-            trollWalkAnimation();
-            trollWalkId = setInterval(trollWalkMarginLeft, 150);
-            trollWalkStatus = true;
-        }
+        if (trollWalkStatus == false)
+            if (trollStopStatus == false) {
+                trollWalkAnimation();
+                trollWalkId = setInterval(trollWalkMarginLeft, 150);
+                trollWalkStatus = true;
+            }
 
     }
 }

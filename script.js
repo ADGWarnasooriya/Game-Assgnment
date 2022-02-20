@@ -84,7 +84,7 @@ function vikingWalkMarginLeft() {
         vikingPositionY = 0;
         viking.style.backgroundPositionY = vikingPositionY + "px";
 
-        vikingWalkStatus = false;
+
     }
 }
 
@@ -109,11 +109,8 @@ function trollWalkMarginLeft() {
         trollPositionY = 0;
         troll.style.backgroundPositionY = trollPositionY + "px";
 
-        trollWalkStatus = false;
+
     }
 }
 
-function vikingAttack() {
-    vikingPositionY = -1024;
-    viking.style.backgroundPositionY = vikingPositionY + "px";
-}
+function vikingWalkAn

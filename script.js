@@ -92,6 +92,7 @@ var trollPositionY = 0;
 var trollMarginLeft = 1000;
 var trollWalkId;
 var trollWalkStatus = false;
+var trollAttackStatus = false;
 
 function trollWalkAnimation() {
     trollPositionY = -262.8;

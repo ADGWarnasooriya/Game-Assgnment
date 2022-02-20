@@ -45,7 +45,7 @@ function keypress(event) {
     // alert(key);
     if (key == 68) {
         vikingWalkAnimation();
-        setInterval(vikingWalkMarginLeft, 150)
+        vikingWalkId = setInterval(vikingWalkMarginLeft, 150)
     }
     if (key == 37) {
         trollWalkAnimation();
@@ -55,6 +55,7 @@ function keypress(event) {
 
 var vikingPositionY = 0;
 var vikingMarginLeft = 0;
+var vikingWalkId;
 
 function vikingWalkAnimation() {
     vikingPositionY = -512;

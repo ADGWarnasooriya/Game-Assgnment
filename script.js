@@ -44,15 +44,14 @@ function keypress(event) {
     var key = event.which;
     // alert(key);
     if (key == 68) {
-        if (vikingWalkStatus = false) {
+        if (vikingWalkStatus == false) {
             vikingWalkAnimation();
             vikingWalkId = setInterval(vikingWalkMarginLeft, 150);
             vikingWalkStatus = true;
         }
-
     }
     if (key == 37) {
-        if (trollWalkStatus = false) {
+        if (trollWalkStatus == false) {
             trollWalkAnimation();
             trollWalkId = setInterval(trollWalkMarginLeft, 150);
             trollWalkStatus = true;
@@ -72,8 +71,15 @@ function vikingWalkAnimation() {
 }
 
 function vikingWalkMarginLeft() {
-    vikingMarginLeft = vikingMarginLeft + 3;
-    viking.style.marginLeft = vikingWalkMarginLeft + "px";
+    vikingMarginLeft = vikingMarginLeft + 10;
+    viking.style.marginLeft = vikingMarginLeft + "px";
+    // alert(trollMarginLeft - vikingMarginLeft);
+    if (trollMarginLeft - vikingMarginLeft < 270) {
+        clearInterval(vikingWalkId);
+        vikingPositionY = 0;
+        viking.style.backgroundPositionY = vikingPositionY + "px";
+        setInterval(vikingIdleAnimation, 150);
+    }
 }
 
 var trollPositionY = 0;
@@ -90,4 +96,10 @@ function trollWalkAnimation() {
 function trollWalkMarginLeft() {
     trollMarginLeft = trollMarginLeft - 3;
     troll.style.marginLeft = trollWalkMarginLeft + "px";
+    if (trollMarginLeft - vikingMarginLeft < 270) {
+        clearInterval(trollWalkId);
+        trollPositionY = 0;
+        troll.style.backgroundPositionY = trollPositionY + "px";
+        setInterval(trollIdleAnimation, 150);
+    }
 }

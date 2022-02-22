@@ -5,6 +5,7 @@ function credits() {
 var viking = document.createElement("div");
 var troll = document.createElement("div");
 var vikingHealth = document.createElement("div");
+var trollHealth = document.createElement("div");
 
 
 

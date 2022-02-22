@@ -85,7 +85,7 @@ function keypress(event) {
         vikingAttackAnimation();
     }
 
-    if (key == 17) {
+    if (key == 16) {
         trollAttackAnimation();
     }
 

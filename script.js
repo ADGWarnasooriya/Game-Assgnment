@@ -243,3 +243,10 @@ function trollAttackAnimation() {
     troll.style.backgroundPositionY = trollPositionY + "px";
     trollWalkStatus = false;
 }
+
+var vikingHealthWidth = 400;
+
+function vikingDeadAnimation() {
+    vikingHealthWidth = vikingHealthWidth - 5;
+    vikingHealth.style.width = vikingHealthWidth + "px";
+}

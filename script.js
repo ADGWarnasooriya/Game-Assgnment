@@ -13,7 +13,9 @@ var trollHealth1 = document.createElement("div");
 function play() {
 
     vikingHealth.className = "vikingHealth";
+    vikingHealth1.className = "vikingHealth1";
     document.body.appendChild(vikingHealth);
+    document.body.appendChild(vikingHealth1);
 
     trollHealth.className = "trollHealth";
     document.body.appendChild(trollHealth);

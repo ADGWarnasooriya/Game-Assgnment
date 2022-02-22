@@ -116,7 +116,7 @@ body {
     height: 30px;
     margin-top: 50px;
     margin-left: 100px;
-    background-color: red;
+    background-color: rgb(16, 179, 2);
     position: absolute;
 }
 
@@ -127,7 +127,19 @@ body {
     width: 400px;
     height: 30px;
     margin-top: 50px;
-    margin-left: 1030px;
-    background-color: red;
+    margin-left: 950px;
+    background-color: rgb(16, 179, 2);
+    position: absolute;
+}
+
+.vikingHealth1 {
+    border-radius: 10px;
+    border: solid;
+    border-color: black;
+    width: 400px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 100px;
+    background-color: rgb(255, 255, 255, 0.2);
     position: absolute;
 }

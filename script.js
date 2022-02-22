@@ -124,12 +124,12 @@ function keypress(event) {
     if (key == 70) {
         vikingAttackAnimation();
         vikingAttackStatus = true;
-        trollAttackStatus = true;
+        // trollAttackStatus = true;
     }
 
     if (key == 16) {
         trollAttackAnimation();
-        vikingAttackStatus = true;
+        // vikingAttackStatus = true;
         trollAttackStatus = true;
     }
 
@@ -143,6 +143,7 @@ var vikingWalkId;
 var vikingWalkStatus = false;
 var vikingAttackStatus = false;
 var vikingStopStatus = false;
+var vikingDeadStatus = false;
 
 function vikingWalkAnimation() {
     vikingPositionY = -512;

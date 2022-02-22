@@ -68,6 +68,7 @@ function keypress(event) {
                 vikingWalkAnimation();
                 vikingWalkId = setInterval(vikingWalkMarginLeft, 150);
                 vikingWalkStatus = true;
+                vikingAttackStatus = false;
             }
     }
     if (key == 37) {
@@ -76,6 +77,7 @@ function keypress(event) {
                 trollWalkAnimation();
                 trollWalkId = setInterval(trollWalkMarginLeft, 150);
                 trollWalkStatus = true;
+                vikingAttackStatus = false;
             }
 
     }

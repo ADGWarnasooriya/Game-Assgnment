@@ -7,6 +7,7 @@ var troll = document.createElement("div");
 var vikingHealth = document.createElement("div");
 var trollHealth = document.createElement("div");
 var vikingHealth1 = document.createElement("div");
+var trollHealth1 = document.createElement("div");
 
 
 function play() {

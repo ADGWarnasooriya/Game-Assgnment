@@ -127,7 +127,7 @@ function keypress(event) {
         // trollAttackStatus = true;
     }
 
-    if (key == 16) {
+    if (key == 17) {
         trollAttackAnimation();
         // vikingAttackStatus = true;
         trollAttackStatus = true;

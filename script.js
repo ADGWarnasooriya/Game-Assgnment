@@ -63,6 +63,12 @@ function trollIdleAnimation() {
     trollIdle = trollIdle + 420;
 
     troll.style.backgroundPositionX = trollIdle + "px";
+
+    if (trollMarginLeft - vikingMarginLeft < 270) {
+        if (trollAttackStatus == true) {
+            vikingDeadAnimation();
+        }
+    }
 }
 
 function keypress(event) {

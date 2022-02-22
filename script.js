@@ -46,6 +46,12 @@ function vikingIdleAnimation() {
     vikingIdle = vikingIdle - 512.1;
 
     viking.style.backgroundPositionX = vikingIdle + "px";
+
+    if (trollMarginLeft - vikingMarginLeft < 270) {
+        if (vikingAttackStatus == true) {
+            trollDeadAnimation();
+        }
+    }
 }
 
 var trollIdle = 0;

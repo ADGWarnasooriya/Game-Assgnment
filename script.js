@@ -82,26 +82,32 @@ function keypress(event) {
 
     if (key == 87) {
         vikingWalkAnimationStop();
+        vikingAttackStatus = false;
     }
 
     if (key == 38) {
         trollWalkAnimationStop();
+        vikingAttackStatus = false;
     }
 
     if (key == 65) {
         vikingBackAnimation();
+        vikingAttackStatus = false;
     }
 
     if (key == 39) {
         trollBackAnimation();
+        vikingAttackStatus = false;
     }
 
     if (key == 70) {
         vikingAttackAnimation();
+        vikingAttackStatus = true;
     }
 
     if (key == 16) {
         trollAttackAnimation();
+        vikingAttackStatus = true;
     }
 
 

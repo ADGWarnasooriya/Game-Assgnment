@@ -119,3 +119,15 @@ body {
     background-color: red;
     position: absolute;
 }
+
+.trollHealth {
+    border-radius: 10px;
+    border: solid;
+    border-color: black;
+    width: 400px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 1030px;
+    background-color: red;
+    position: absolute;
+}

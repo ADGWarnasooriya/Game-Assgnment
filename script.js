@@ -189,3 +189,12 @@ function trollBackAnimation() {
         trollStopStatus = false;
     }, 500);
 }
+
+function vikingAttackAnimation() {
+    clearInterval(vikingWalkId);
+    vikingPositionY = 0;
+    viking.style.backgroundPositionY = vikingPositionY + "px";
+    vikingPositionY = -1024;
+    viking.style.backgroundPositionY = vikingPositionY + "px";
+    vikingWalkStatus = false;
+}

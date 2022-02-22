@@ -40,6 +40,7 @@ function play() {
 var vikingIdle = 0;
 var vikingIdleId = 0;
 var vikingIdleStatus = false;
+var vikingPositionX = 0;
 
 function vikingIdleAnimation() {
     vikingIdleStatus = true;
@@ -57,6 +58,7 @@ function vikingIdleAnimation() {
 var trollIdle = 0;
 var trollIdleId = 0;
 var trollIdleStatus = false;
+var trollPositionX = 0;
 
 function trollIdleAnimation() {
     trollIdleStatus = true;
@@ -272,5 +274,21 @@ function trollDeadAnimation() {
     trollHealth.style.width = trollHealthWidth + "px";
     if (vikingHealthWidth == 0) {
         vikingDown();
+    }
+}
+
+function vikingDown() {
+    clearInterval(vikingIdleId);
+    clearInterval(vikingWalkId);
+    trollPositionY = 0;
+    troll.style.backgroundPositionY = trollPositionY + "px";
+    vikingPositionY = -2048;
+    viking.style.backgroundPositionY = vikingPositionY + "px";
+    vikingDeadStatus = true;
+
+    for (var i = 0; i < 5; i++) {
+        vikingPositionX = vikingPositionX - 512.1;
+
+        viking.style.backgroundPositionX = vikingPositionX + "px";
     }
 }

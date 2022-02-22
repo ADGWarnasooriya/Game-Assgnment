@@ -265,6 +265,9 @@ var vikingHealthWidth = 400;
 function vikingDeadAnimation() {
     vikingHealthWidth = vikingHealthWidth - 5;
     vikingHealth.style.width = vikingHealthWidth + "px";
+    if (vikingHealthWidth == 0) {
+        vikingDown();
+    }
 }
 
 var trollHealthWidth = 400;
@@ -272,9 +275,7 @@ var trollHealthWidth = 400;
 function trollDeadAnimation() {
     trollHealthWidth = trollHealthWidth - 5;
     trollHealth.style.width = trollHealthWidth + "px";
-    if (vikingHealthWidth == 0) {
-        vikingDown();
-    }
+
 }
 
 function vikingDown() {
@@ -285,8 +286,10 @@ function vikingDown() {
     vikingPositionY = -2048;
     viking.style.backgroundPositionY = vikingPositionY + "px";
     vikingDeadStatus = true;
+    vikingPositionX = 0;
 
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 9; i++) {
+
         vikingPositionX = vikingPositionX - 512.1;
 
         viking.style.backgroundPositionX = vikingPositionX + "px";

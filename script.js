@@ -81,6 +81,10 @@ function keypress(event) {
         trollBackAnimation();
     }
 
+    if (key == 70) {
+        vikingAttackAnimation();
+    }
+
 
 
 }

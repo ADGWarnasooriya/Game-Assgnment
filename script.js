@@ -202,3 +202,12 @@ function vikingAttackAnimation() {
     viking.style.backgroundPositionY = vikingPositionY + "px";
     vikingWalkStatus = false;
 }
+
+function trollAttackAnimation() {
+    clearInterval(trollWalkId);
+    trollPositionY = 0;
+    troll.style.backgroundPositionY = trollPositionY + "px";
+    trollPositionY = -525.6;
+    troll.style.backgroundPositionY = trollPositionY + "px";
+    trollWalkStatus = false;
+}

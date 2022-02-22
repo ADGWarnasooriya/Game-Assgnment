@@ -10,8 +10,12 @@ var trollHealth = document.createElement("div");
 
 
 function play() {
+
     vikingHealth.className = "vikingHealth";
     document.body.appendChild(vikingHealth);
+
+    trollHealth.className = "trollHealth";
+    document.body.appendChild(trollHealth);
 
     var options = document.getElementById("options");
     var name = document.getElementById("name");

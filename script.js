@@ -18,7 +18,9 @@ function play() {
     document.body.appendChild(vikingHealth1);
 
     trollHealth.className = "trollHealth";
+    trollHealth1.className = "trollHealth1";
     document.body.appendChild(trollHealth);
+    document.body.appendChild(trollHealth1);
 
     var options = document.getElementById("options");
     var name = document.getElementById("name");

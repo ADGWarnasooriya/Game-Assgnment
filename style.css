@@ -107,3 +107,15 @@ body {
     margin-top: 415px;
     margin-left: 950px;
 }
+
+.vikingHealth {
+    border-radius: 10px;
+    border: solid;
+    border-color: black;
+    width: 400px;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 700px;
+    background-color: red;
+    position: absolute;
+}

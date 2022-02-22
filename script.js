@@ -250,3 +250,10 @@ function vikingDeadAnimation() {
     vikingHealthWidth = vikingHealthWidth - 5;
     vikingHealth.style.width = vikingHealthWidth + "px";
 }
+
+var trollHealthWidth = 400;
+
+function trollDeadAnimation() {
+    trollHealthWidth = trollHealthWidth - 5;
+    trollHealth.style.width = trollHealthWidth + "px";
+}

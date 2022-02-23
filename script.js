@@ -317,4 +317,6 @@ function trollDown() {
 
         troll.style.backgroundPositionX = trollPositionX + "px";
     }
+
+    menu.className = "level2";
 }

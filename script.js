@@ -297,6 +297,8 @@ function vikingDown() {
 
         viking.style.backgroundPositionX = vikingPositionX + "px";
     }
+
+    menu.className = "level2";
 }
 
 function trollDown() {

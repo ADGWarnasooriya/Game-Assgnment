@@ -298,7 +298,7 @@ function vikingDown() {
         viking.style.backgroundPositionX = vikingPositionX + "px";
     }
 
-    menu.className = "level2";
+    level = level + 1;
 }
 
 function trollDown() {
@@ -318,5 +318,5 @@ function trollDown() {
         troll.style.backgroundPositionX = trollPositionX + "px";
     }
 
-    menu.className = "level2";
+    level = level + 1;
 }
